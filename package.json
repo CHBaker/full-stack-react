@@ -26,13 +26,15 @@
     "@babel/core": "^7.16.7",
     "@babel/preset-env": "^7.16.7",
     "@babel/preset-react": "^7.16.7",
-    "babel-core": "^7.0.0-bridge.0",
+    "babel-core": "6.x || ^7.0.0-bridge.0",
     "babel-loader": "^8.2.3",
+    "core-js": "^3.20.2",
     "ejs": "^3.1.6",
     "express": "^4.17.2",
     "pm2": "^5.1.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "regenerator-runtime": "^0.13.9",
     "webpack": "^5.65.0"
   },
   "peerDependencies": {
