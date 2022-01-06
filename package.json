@@ -7,27 +7,35 @@
   "author": "CHBaker <charlesprobaker@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "pm2 start lib/server.js --watch --interpreter babel-node"
+    "dev": "pm2 start lib/server.js --watch --interpreter babel-node",
+    "webpack": "webpack -wd 'source-map'"
   },
   "babel": {
     "presets": [
-      "react",
-      "env",
-      "stage-2"
+      "@babel/preset-env",
+      "@babel/preset-react"
     ]
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",
     "eslint": "^3.19.0",
-    "eslint-plugin-react": "^6.10.3"
+    "eslint-plugin-react": "^6.10.3",
+    "webpack-cli": "^4.9.1"
   },
   "dependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-react": "^6.24.1",
-    "babel-preset-stage-2": "^6.24.1",
+    "@babel/core": "^7.16.7",
+    "@babel/preset-env": "^7.16.7",
+    "@babel/preset-react": "^7.16.7",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-loader": "^8.2.3",
     "ejs": "^3.1.6",
     "express": "^4.17.2",
-    "pm2": "^5.1.2"
+    "pm2": "^5.1.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "webpack": "^5.65.0"
+  },
+  "peerDependencies": {
+    "babel-core": "6.x || ^7.0.0-bridge.0"
   }
 }
